@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		MB2001 /* MokaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1001 /* MokaApp.swift */; };
+		MB2002 /* CaffeinateFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1002 /* CaffeinateFlags.swift */; };
+		MB2003 /* CaffeinateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1003 /* CaffeinateService.swift */; };
+		MB2004 /* ExternalCaffeinateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1004 /* ExternalCaffeinateMonitor.swift */; };
+		MB2005 /* PowerStateMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1005 /* PowerStateMonitor.swift */; };
+		MB2006 /* MokaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1006 /* MokaViewModel.swift */; };
+		MB2007 /* MokaPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1007 /* MokaPanel.swift */; };
+		MB2008 /* AssertionTogglesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1008 /* AssertionTogglesView.swift */; };
+		MB2009 /* DurationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1009 /* DurationPickerView.swift */; };
+		MB2010 /* StatusLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = MF1010 /* StatusLineView.swift */; };
+		MB2011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = MF1011 /* Assets.xcassets */; };
+		MB2012 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = MF1012 /* Info.plist */; };
+		MB2013 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = MF1013 /* ServiceManagement.framework */; };
+		MB2014 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = MF1014 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		MF1001 /* MokaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokaApp.swift; sourceTree = "<group>"; };
+		MF1002 /* CaffeinateFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinateFlags.swift; sourceTree = "<group>"; };
+		MF1003 /* CaffeinateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinateService.swift; sourceTree = "<group>"; };
+		MF1004 /* ExternalCaffeinateMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalCaffeinateMonitor.swift; sourceTree = "<group>"; };
+		MF1005 /* PowerStateMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerStateMonitor.swift; sourceTree = "<group>"; };
+		MF1006 /* MokaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokaViewModel.swift; sourceTree = "<group>"; };
+		MF1007 /* MokaPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokaPanel.swift; sourceTree = "<group>"; };
+		MF1008 /* AssertionTogglesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionTogglesView.swift; sourceTree = "<group>"; };
+		MF1009 /* DurationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPickerView.swift; sourceTree = "<group>"; };
+		MF1010 /* StatusLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLineView.swift; sourceTree = "<group>"; };
+		MF1011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		MF1012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		MF1013 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		MF1014 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		MF1015 /* Moka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Moka.entitlements; sourceTree = "<group>"; };
+		MT7001 /* Moka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		MP3001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				MB2013 /* ServiceManagement.framework in Frameworks */,
+				MB2014 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		MG4000 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				MG4001 /* Moka */,
+				MG4010 /* Frameworks */,
+				MG4011 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		MG4001 /* Moka */ = {
+			isa = PBXGroup;
+			children = (
+				MF1001 /* MokaApp.swift */,
+				MF1012 /* Info.plist */,
+				MF1015 /* Moka.entitlements */,
+				MF1011 /* Assets.xcassets */,
+				MG4002 /* Models */,
+				MG4003 /* Services */,
+				MG4004 /* ViewModels */,
+				MG4005 /* Views */,
+			);
+			path = Moka;
+			sourceTree = "<group>";
+		};
+		MG4002 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				MF1002 /* CaffeinateFlags.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		MG4003 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				MF1003 /* CaffeinateService.swift */,
+				MF1004 /* ExternalCaffeinateMonitor.swift */,
+				MF1005 /* PowerStateMonitor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		MG4004 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				MF1006 /* MokaViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		MG4005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				MF1007 /* MokaPanel.swift */,
+				MF1008 /* AssertionTogglesView.swift */,
+				MF1009 /* DurationPickerView.swift */,
+				MF1010 /* StatusLineView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		MG4010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				MF1013 /* ServiceManagement.framework */,
+				MF1014 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		MG4011 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				MT7001 /* Moka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		MT7002 /* Moka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ML6001 /* Build configuration list for PBXNativeTarget "Moka" */;
+			buildPhases = (
+				MP3002 /* Sources */,
+				MP3001 /* Frameworks */,
+				MP3003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moka;
+			productName = Moka;
+			productReference = MT7001 /* Moka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		MT7003 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					MT7002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = ML6002 /* Build configuration list for PBXProject "Moka" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = MG4000 /* root */;
+			productRefGroup = MG4011 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				MT7002 /* Moka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		MP3003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				MB2011 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		MP3002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				MB2001 /* MokaApp.swift in Sources */,
+				MB2002 /* CaffeinateFlags.swift in Sources */,
+				MB2003 /* CaffeinateService.swift in Sources */,
+				MB2004 /* ExternalCaffeinateMonitor.swift in Sources */,
+				MB2005 /* PowerStateMonitor.swift in Sources */,
+				MB2006 /* MokaViewModel.swift in Sources */,
+				MB2007 /* MokaPanel.swift in Sources */,
+				MB2008 /* AssertionTogglesView.swift in Sources */,
+				MB2009 /* DurationPickerView.swift in Sources */,
+				MB2010 /* StatusLineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		MC5001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLES = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		MC5002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLES = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		MC5003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_SANDBOX_ENABLED = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Moka/Moka.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Moka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zvh.moka";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		MC5004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_SANDBOX_ENABLED = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Moka/Moka.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Moka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zvh.moka";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ML6001 /* Build configuration list for PBXNativeTarget "Moka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				MC5003 /* Debug */,
+				MC5004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ML6002 /* Build configuration list for PBXProject "Moka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				MC5001 /* Debug */,
+				MC5002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = MT7003 /* Project object */;
+}
