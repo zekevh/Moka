@@ -20,7 +20,7 @@ Your Mac, wide awake.
 ## Install
 
 ```sh
-brew install --cask zekevh/moka/moka
+brew install --cask zekevh/tap/moka
 ```
 
 Or [download the DMG](https://github.com/zekevh/moka/releases/latest).

@@ -1,10 +1,10 @@
 # Homebrew cask for Moka
 #
-# Host this file in a personal tap repo: github.com/USERNAME/homebrew-moka
+# Host this file in the shared tap repo: github.com/USERNAME/homebrew-tap
 #   Casks/moka.rb
 #
 # Install:
-#   brew install --cask USERNAME/moka/moka
+#   brew install --cask USERNAME/tap/moka
 #
 # To update after a new release:
 #   1. Replace `version` with the new version string.
